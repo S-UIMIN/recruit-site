@@ -442,8 +442,8 @@ ul{margin:0;padding:0;list-style:none}
 .meet__tileBtn::after{content:"";position:absolute;inset:0;background:rgba(112,32,130,0);transition:background .25s}
 .meet__tileBtn:hover .meet__tile,.meet__tileBtn:focus-visible .meet__tile{transform:scale(1.05)}
 .meet__tileBtn:hover::after,.meet__tileBtn:focus-visible::after{background:rgba(112,32,130,.12)}
-.meet__badge{position:absolute;top:6%;right:4.5%;width:13%;max-width:34px;min-width:20px;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.92);box-shadow:0 2px 6px rgba(60,45,90,.25);display:grid;place-items:center;pointer-events:none}
-.meet__badge svg{width:56%;height:56%}
+.meet__badge{position:absolute;top:6%;right:4.5%;width:auto;white-space:nowrap;display:inline-flex;align-items:center;padding:3px 7px;border-radius:999px;background:rgba(255,255,255,.97);box-shadow:0 2px 6px rgba(60,45,90,.25);color:#702082;font-size:9px;font-weight:800;letter-spacing:.04em;pointer-events:none;transition:transform .25s ease,box-shadow .25s ease}
+.meet__tileBtn:hover .meet__badge,.meet__tileBtn:focus-visible .meet__badge{transform:translateY(-1px);box-shadow:0 4px 10px rgba(60,45,90,.32)}
 /* ---- profile modal ---- */
 .pf-overlay{font-family:var(--font);position:fixed;inset:0;z-index:1000;background:rgba(28,22,42,.58);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:flex-start;justify-content:center;padding:40px 18px;overflow-y:auto;opacity:0;visibility:hidden;transition:opacity .28s ease,visibility .28s}
 .pf-overlay.open{opacity:1;visibility:visible}
@@ -683,9 +683,9 @@ ul{margin:0;padding:0;list-style:none}
     <div class="meet reveal" role="img" aria-label="オンライン会議に並ぶS'UIMINの仲間たち">
       <img class="meet__bg" src="assets/img/meet-bg.png" alt="" aria-hidden="true">
       <div class="meet__grid">
-        <a class="meet__tileBtn" href="#pf-0" data-member="0" aria-label="Y.Yさんのプロフィールを見る"><img class="meet__tile" src="assets/img/meet-tile.png" alt="社員の似顔絵1"><span class="meet__badge"><svg viewBox="0 0 24 24" fill="none" stroke="#702082" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4"/></svg></span></a>
-        <a class="meet__tileBtn" href="#pf-1" data-member="1" aria-label="S.Aさんのプロフィールを見る"><img class="meet__tile" src="assets/img/meet-tile-2.png" alt="社員の似顔絵2"><span class="meet__badge"><svg viewBox="0 0 24 24" fill="none" stroke="#702082" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4"/></svg></span></a>
-        <a class="meet__tileBtn" href="#pf-2" data-member="2" aria-label="Y.Yさんのプロフィールを見る"><img class="meet__tile" src="assets/img/meet-tile-3.png" alt="社員の似顔絵3"><span class="meet__badge"><svg viewBox="0 0 24 24" fill="none" stroke="#702082" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4M15 3h4a2 2 0 0 1 2 2v4M9 21H5a2 2 0 0 1-2-2v-4M15 21h4a2 2 0 0 0 2-2v-4"/></svg></span></a>
+        <a class="meet__tileBtn" href="#pf-0" data-member="0" aria-label="Y.Yさんのプロフィールを見る"><img class="meet__tile" src="assets/img/meet-tile.png" alt="社員の似顔絵1"><span class="meet__badge">CLICK</span></a>
+        <a class="meet__tileBtn" href="#pf-1" data-member="1" aria-label="S.Aさんのプロフィールを見る"><img class="meet__tile" src="assets/img/meet-tile-2.png" alt="社員の似顔絵2"><span class="meet__badge">CLICK</span></a>
+        <a class="meet__tileBtn" href="#pf-2" data-member="2" aria-label="Y.Yさんのプロフィールを見る"><img class="meet__tile" src="assets/img/meet-tile-3.png" alt="社員の似顔絵3"><span class="meet__badge">CLICK</span></a>
         <div class="meet__logo"><img src="assets/img/meet-logo.png" alt="S'UIMIN"></div>
       </div>
       <img class="meet__bar" src="assets/img/meet-bar.png" alt="" aria-hidden="true">
